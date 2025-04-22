@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mira Virtual Tours</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfc;
+      color: #6f5b4e;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+      flex-wrap: wrap;
+      position: relative;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #6f5b4e;
+    }
+    .menu {
+      font-size: 1rem;
+      font-weight: 400;
+      cursor: pointer;
+      position: relative;
+    }
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: #fdfdfc;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    .dropdown a {
+      display: block;
+      padding: 0.75rem 1.5rem;
+      color: #6f5b4e;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .dropdown a:hover {
+      background-color: #f3f2f1;
+    }
+    .menu:hover .dropdown {
+      display: block;
+    }
+    .hero {
+      text-align: center;
+      padding: 2rem;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      margin: 0.5rem 0;
+      color: #6f5b4e;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .button {
+      border: 1px solid #6f5b4e;
+      background-color: transparent;
+      color: #6f5b4e;
+      padding: 0.5rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .image-section {
+      text-align: center;
+      padding: 2rem;
+    }
+    .image-section img {
+      width: 90%;
+      max-width: 600px;
+      border-radius: 20px;
+    }
+    .services {
+      text-align: center;
+      padding: 2rem;
+    }
+    .services h2 {
+      font-size: 1.8rem;
+      color: #6f5b4e;
+    }
+    footer {
+      background-color: #f3f2f1;
+      color: #6f5b4e;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+    footer p {
+      margin: 0.3rem 0;
+    }
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      .button {
+        padding: 0.5rem 1rem;
+      }
+      .services h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">mira</div>
+    <div class="menu">
+      MENÚ
+      <div class="dropdown">
+        <a href="#servicios">Nuestros Servicios</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#demo">Ver Demo</a>
+        <a href="#contacto">Contáctanos</a>
+      </div>
+    </div>
+  </header>
+  <section class="hero">
+    <h1>TOURS VIRTUALES 360°<br>PARA HOTELES Y BIENES RAÍCES</h1>
+    <p>Explora antes de llegar</p>
+    <a href="#demo" class="button">VER DEMO</a>
+  </section>
+  <section class="image-section">
+<img src="https://assets.onecompiler.app/43fkjpeue/43fkjhwwh/virtual%20tour.png" alt="Ejemplo de tour 360°">  </section>
+  <section class="services" id="servicios">
+    <h2>NUESTROS SERVICIOS</h2>
+  </section>
+  <footer id="contacto">
+    <p>Instagram: @miratours</p>
+    <p>Correo: mira@gmail.com</p>
+    <p>Teléfono: +504 3170-8395</p>
+  </footer>
+</body>
+</html>
